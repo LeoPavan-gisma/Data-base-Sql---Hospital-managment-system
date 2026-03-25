@@ -338,15 +338,6 @@ pip install mysql-connector-python pymongo
 - **MongoDB Queries**: See NoSQL/mongo_queries.js (15+ examples)
 - **Project Report**: See Documentation/PROJECT_REPORT.txt
 
-## Video Demonstration
-
-For a complete walkthrough of the system, including:
-- Database setup process
-- Query demonstrations
-- Report generation
-- Application usage
-
-Watch the demo video: [Link to YouTube video]
 
 ## Authors & Attribution
 
