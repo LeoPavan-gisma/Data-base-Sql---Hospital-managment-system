@@ -1,0 +1,47 @@
+# Hospital Management System - Python Dependencies
+# Install with: pip install -r requirements.txt
+
+# Database Connectors
+mysql-connector-python==8.0.33
+pymongo==4.5.0
+
+# Database Connection Pools & Utilities
+SQLAlchemy==2.0.23
+mysql-utilities==1.6.5
+
+# Data Processing & Analysis
+pandas==2.1.3
+numpy==1.26.2
+
+# Configuration Management
+python-dotenv==1.0.0
+configparser==6.0.0
+
+# Logging & Monitoring
+python-json-logger==2.0.7
+
+# REST API (optional - for future API layer)
+Flask==3.0.0
+Flask-RESTful==0.3.10
+
+# Data Validation
+marshmallow==3.20.1
+python-dateutil==2.8.2
+
+# Security & Authentication (optional)
+cryptography==41.0.7
+PyJWT==2.8.1
+
+# Testing & Quality Assurance
+pytest==7.4.3
+pytest-cov==4.1.0
+mock==5.1.0
+
+# Code Quality
+pylint==3.0.3
+black==23.11.0
+flake8==6.1.0
+
+# Utilities
+requests==2.31.0
+beautifulsoup4==4.12.2
