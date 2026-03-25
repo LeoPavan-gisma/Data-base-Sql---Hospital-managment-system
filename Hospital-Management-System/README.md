@@ -24,7 +24,6 @@ Hospital-Management-System/
 │   ├── hospital_management_app.py - Main Python application
 │   └── requirements.txt         - Python dependencies
 └── Documentation/
-    ├── PROJECT_REPORT.txt      - Complete project report
     └── README.md              - This file
 ```
 
