@@ -1,11 +1,6 @@
--- Hospital Management System - Views for Common Operations
--- Simplified data access layer for application
+
 
 USE HospitalManagement;
-
--- ============================================================================
--- VIEWS FOR DATA RETRIEVAL
--- ============================================================================
 
 -- View 1: Complete Patient Profile
 CREATE OR REPLACE VIEW vw_PatientProfile AS

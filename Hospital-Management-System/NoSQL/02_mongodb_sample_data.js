@@ -1,6 +1,7 @@
 
 
-use HospitalManagement;
+// Switch to HospitalManagement database
+const db = db.getSiblingDB('HospitalManagement');
 
 
 db.MedicalHistory.insertMany([

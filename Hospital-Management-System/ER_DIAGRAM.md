@@ -2,15 +2,15 @@
 
 ## Database Design Overview
 
-This Hospital Management System uses a **hybrid SQL/NoSQL architecture** to handle both structured (relational) and unstructured (document-based) healthcare data. The design follows **3rd Normal Form (3NF)** normalization principles with ACID compliance for critical operations.
+Hospital Management System with hybrid SQL/NoSQL architecture for structured and document-based healthcare data. Design follows 3rd Normal Form (3NF) normalization with ACID compliance.
 
-### Design Principles Applied:
-1. **Normalization** - Eliminated redundancy through 3NF design
-2. **Referential Integrity** - Foreign keys maintain data consistency
-3. **ACID Compliance** - Transactions, rollback support, consistency checks
-4. **Scalability** - Efficient indexing for large datasets
-5. **Auditability** - Timestamps and activity logging for compliance
-6. **Data Security** - Encryption-ready fields for sensitive data
+### Design Principles:
+1. Normalization - Reduce data redundancy
+2. Referential Integrity - Foreign key relationships
+3. ACID Compliance - Transaction support
+4. Scalability - Strategic indexing
+5. Auditability - Timestamps and activity logs
+6. Data Security - Encrypted sensitive fields
 
 ---
 

@@ -1,13 +1,8 @@
--- Hospital Management System - Stored Procedures and Functions
--- M605 Database Project - Advanced SQL Features
+
 
 USE HospitalManagement;
 
--- ============================================================================
--- STORED PROCEDURES
--- ============================================================================
 
--- Procedure 1: Add New Patient with Validation
 DELIMITER $$
 
 CREATE PROCEDURE sp_AddPatient(

@@ -1,7 +1,7 @@
 # Hospital Management System - Quick Start Guide
 
 ## Overview
-A comprehensive hospital management system with hybrid SQL/NoSQL architecture for managing patient records, appointments, medical data, and billing in a healthcare facility.
+A hospital management system with SQL/NoSQL architecture for patient records, appointments, and billing.
 
 ## Technologies
 - **SQL Database**: MySQL 8.0+

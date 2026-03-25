@@ -1,8 +1,5 @@
 #!/usr/bin/env python3
-"""
-Hospital Management System - Main Application
-M605 Advanced Databases - Hybrid SQL/NoSQL Integration
-"""
+
 
 import sqlite3
 import json
@@ -191,7 +188,7 @@ class HospitalDatabase:
                 self.cursor.execute(statement)
         
         self.conn.commit()
-        print("Database schema created successfully")
+        print("Database schema created")
     
     def insert_sample_data(self):
         """Insert sample healthcare data"""
@@ -281,7 +278,7 @@ class HospitalDatabase:
             )
         
         self.conn.commit()
-        print("Sample data inserted successfully")
+        print("Sample data inserted")
     
     # ========== CRUD OPERATIONS ==========
     
@@ -307,12 +304,12 @@ class HospitalDatabase:
     def update_patient(self, patient_id: int, **kwargs) -> bool:
         """Update patient information"""
         valid_fields = ['Email', 'Phone', 'Address', 'PreexistingConditions', 'Allergies']
-        fields = [f"{k} = ?" for k in kwargs.keys() if k in valid_fields]
+        fields = [f"{k} = ?" for k in kwargs if k in valid_fields]
         
         if not fields:
             return False
         
-        values = [kwargs[k] for k in kwargs.keys() if k in valid_fields]
+        values = [kwargs[k] for k in kwargs if k in valid_fields]
         values.append(patient_id)
         
         query = f"UPDATE Patients SET {', '.join(fields)}, UpdatedAt = CURRENT_TIMESTAMP WHERE PatientID = ?"
@@ -386,7 +383,7 @@ class HospitalDatabase:
         self.cursor.execute("SELECT * FROM LabTests WHERE LabTestID = ?", (lab_test_id,))
         test = dict(self.cursor.fetchone())
         
-        # Simple abnormality detection (in production would be more sophisticated)
+        # Abnormality detection based on normal ranges
         is_abnormal = False
         is_critical = False
         interpretation = "Normal"
@@ -543,9 +540,8 @@ class HospitalDatabase:
 
 def demo_application():
     """Demonstrate all functionality"""
-    
-    print("\n" + "="*80)
-    print("HOSPITAL MANAGEMENT SYSTEM - DEMONSTRATION")
+    print("="*80)
+    print("HOSPITAL MANAGEMENT SYSTEM")
     print("="*80 + "\n")
     
     # Initialize database
@@ -575,7 +571,7 @@ def demo_application():
     # Update patient
     print(f"\n→ Updating patient contact information...")
     db.update_patient(new_patient_id, Phone="050-9999999", Email="emma.new@example.com")
-    print(f"  Contact updated successfully")
+    print("  Contact updated")
     
     print("\n" + "-"*80)
     print("2. APPOINTMENT OPERATIONS")
@@ -704,7 +700,7 @@ def demo_application():
             print(f"    Total Billed: AED {bill['TotalBilled']:,.0f} | Paid: AED {bill['Paid'] or 0:,.0f} | Pending: AED {bill['Pending'] or 0:,.0f}")
     
     print("\n" + "="*80)
-    print("DEMONSTRATION COMPLETE")
+    print("COMPLETE")
     print("="*80 + "\n")
     
     db.close()

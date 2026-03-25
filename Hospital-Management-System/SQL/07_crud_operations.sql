@@ -1,6 +1,6 @@
 -- Hospital Management System - CRUD Operations and Additional Queries
 -- M605 Advanced Databases - SQL Operations
--- Comprehensive CRUD examples for all tables
+-- CRUD examples for all tables
 
 -- ============================================================================
 -- CREATE OPERATIONS

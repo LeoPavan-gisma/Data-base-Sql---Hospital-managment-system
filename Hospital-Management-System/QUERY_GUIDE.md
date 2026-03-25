@@ -32,7 +32,7 @@ WHERE p.PatientID = ?
 GROUP BY p.PatientID;
 ```
 
-**Purpose:** Get comprehensive patient overview
+**Purpose:** Get patient overview
 **Use Case:** Patient dashboard, medical history review
 **Performance:** <1ms with proper indexing
 
@@ -53,7 +53,7 @@ GROUP BY p.PatientID
 ORDER BY p.LastName, p.FirstName;
 ```
 
-**Purpose:** Advanced patient search with multiple filters
+**Purpose:** Patient search with multiple filters
 **Parameters:** firstName, lastName, bloodType, bloodType, insuranceProvider, insuranceProvider, minDOB, maxDOB
 **Use Case:** Patient lookup, batch processing
 

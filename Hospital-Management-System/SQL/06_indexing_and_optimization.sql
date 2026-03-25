@@ -1,11 +1,7 @@
--- Hospital Management System - Performance Optimization and Indexes
--- M605 Database Project - Query Performance Tuning
 
 USE HospitalManagement;
 
--- ============================================================================
--- COMPREHENSIVE INDEXING STRATEGY
--- ============================================================================
+
 
 -- Department Indexes
 CREATE INDEX idx_dep_name ON Departments(DepartmentName);

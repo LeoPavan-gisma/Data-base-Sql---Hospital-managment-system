@@ -1,6 +1,4 @@
--- Hospital Management System - Sample Data
--- Comprehensive dataset with 100+ records
--- M605 Advanced Databases Project
+
 
 USE HospitalManagement;
 
